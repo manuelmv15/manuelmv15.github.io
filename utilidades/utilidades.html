@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstroW - Utilidades</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../css/custom.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+</head>
+
+<body class="">
+
+    <header class="nav-header" id="site-header">
+        <div class="nav-header-wrapper">
+            <div class="nav-left">
+                <a href="../index.html" class="nav-items-header">Inicio</a>
+                <a href="../formularios/formularios.html" class="nav-items-header">Formularios</a>
+                <a href="../componentes/componentes.html" class="nav-items-header">Componentes</a>
+                <a href="../layout/layout.html" class="nav-items-header">Layout</a>
+                <a href="utilidades.html" class="nav-items-header">Utilidades</a>
+            </div>
+
+            <div class="nav-right">
+                <div class="nav-brand">
+                    <img src="../icons/logo.svg" alt="AstroW Logo" class="nav-brand-logo">
+                    <span class="nav-brand-name theme-font">AstroW</span>
+                </div>
+
+                <div class="nav-menu-container">
+                    <div class="nav-menu" id="menuAlt">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-mobile-links">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../formularios/formularios.html">Formularios</a></li>
+                <li><a href="../componentes/componentes.html">Componentes</a></li>
+                <li><a href="../layout/layout.html">Layout</a></li>
+                <li><a href="utilidades.html">Utilidades</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="p-2 mt-3 bg-color-blue-dark-6 text-area-gray-light-4 container-bordered-xl">
+
+        <h1 class="title theme-font">Utilidades</h1>
+
+        <section class="mt-2">
+            <h2 class="sub-title mb-1">Padding y Margin</h2>
+            <hr class="h-rule bg-color-info">
+            <p class="mt-1">Astro proporciona clases para manejar <span class="badge-soft-info">Padding</span> y <span
+                    class="badge-soft-info">Margin</span> en diferentes direcciones.</p>
+
+            <ul class="mt-1">
+                <li><strong class="badge-outlined-info">*l</strong>: Izquierda</li>
+                <li><strong class="badge-outlined-info">*r</strong>: Derecha</li>
+                <li><strong class="badge-outlined-info">*t</strong>: Arriba</li>
+                <li><strong class="badge-outlined-info">*b</strong>: Abajo</li>
+            </ul>
+
+            <p class="mt-2">Combina prefijos de padding/margin con sufijos para valores:</p>
+            <div class="grid md:grid-cols-2 xs:grid-cols-1 mt-1">
+
+                <div>
+                    <table class="custom-table">
+                        <thead>
+                            <tr>
+                                <th>Sufijo</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>*-0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>*-1</td>
+                                <td>0.75rem</td>
+                            </tr>
+                            <tr>
+                                <td>*-2</td>
+                                <td>1.5rem</td>
+                            </tr>
+                            <tr>
+                                <td>*-3</td>
+                                <td>3rem</td>
+                            </tr>
+                            <tr>
+                                <td>*-4</td>
+                                <td>4.5rem</td>
+                            </tr>
+                            <tr>
+                                <td>*-5</td>
+                                <td>6rem</td>
+                            </tr>
+                            <tr>
+                                <td>*-auto</td>
+                                <td>auto</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div>
+                    <label class="badge-outlined-info">Ejemplo HTML</label>
+                    <pre class="bordered-warning"><code class="language-html">&lt;p class="mb-4"&gt;Margin bottom&lt;/p&gt;
+&lt;p class="pl-1"&gt;Padding left&lt;/p&gt;
+&lt;p class="mr-0 pt-3"&gt;Margin right y padding top&lt;/p&gt;</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-4">
+            <h2 class="sub-title mt-1 mb-1">Width y Height</h2>
+            <hr class="h-rule bg-color-info">
+            <p class="mt-1">Clases para manejar width <span class="badge-soft-info">w*</span> y Height <span
+                    class="badge-soft-info">h*</span>.</p>
+
+            <div class="grid md:grid-cols-2 xs:grid-cols-1 mt-1">
+                <div>
+                    <table class="custom-table">
+                        <thead>
+                            <tr>
+                                <th>Sufijo</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>*-auto</td>
+                                <td>auto</td>
+                            </tr>
+                            <tr>
+                                <td>*-25</td>
+                                <td>25%</td>
+                            </tr>
+                            <tr>
+                                <td>*-50</td>
+                                <td>50%</td>
+                            </tr>
+                            <tr>
+                                <td>*-75</td>
+                                <td>75%</td>
+                            </tr>
+                            <tr>
+                                <td>*-100</td>
+                                <td>100%</td>
+                            </tr>
+                            <tr>
+                                <td>*-screen</td>
+                                <td>100dvh</td>
+                            </tr>
+                            <tr>
+                                <td>*-fit</td>
+                                <td>fit-content</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <label class="badge-outlined-info">Ejemplo HTML</label>
+                    <pre class="bordered-warning"><code class="language-html">&lt;div class="w-50 h-75"&gt;&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-4">
+            <h2 class="sub-title mb-1">Max/Min Width & Height</h2>
+            <hr class="h-rule bg-color-info">
+            <p class="mt-1">Astro proporciona clases para establecer límites máximos y mínimos de tamaño usando:</p>
+
+            <ul class="mt-1 mb-2">
+                <li><strong class="badge-outlined-info">max-w-*</strong> : Ancho máximo</li>
+                <li><strong class="badge-outlined-info">min-w-*</strong> : Ancho mínimo</li>
+                <li><strong class="badge-outlined-info">max-h-*</strong> : Altura máxima</li>
+                <li><strong class="badge-outlined-info">min-h-*</strong> : Altura mínima</li>
+            </ul>
+
+            <div class="grid md:grid-cols-2 xs:grid-cols-1 mt-1">
+
+                <div>
+                    <table class="custom-table">
+                        <thead>
+                            <tr>
+                                <th>Sufijo</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>*-25</td>
+                                <td>25%</td>
+                            </tr>
+                            <tr>
+                                <td>*-50</td>
+                                <td>50%</td>
+                            </tr>
+                            <tr>
+                                <td>*-75</td>
+                                <td>75%</td>
+                            </tr>
+                            <tr>
+                                <td>*-full</td>
+                                <td>100%</td>
+                            </tr>
+                            <tr>
+                                <td>*-screen</td>
+                                <td>100vw / 100vh</td>
+                            </tr>
+                            <tr>
+                                <td>*-none</td>
+                                <td>none</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <label class="badge-outlined-info">Ejemplo HTML</label>
+                    <pre class="bordered-warning"><code class="language-html">&lt;div class=&quot;max-w-50&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;min-w-full&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;max-h-screen&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;min-h-25&quot;&gt;&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-4">
+            <h2 class="sub-title mb-1">Position</h2>
+            <hr class="h-rule bg-color-info">
+            <p class="mt-1">Con las clases <code class="badge-soft-info">pos-*</code> puedes controlar el tipo de
+                posicionamiento de un elemento.</p>
+
+            <div class="grid md:grid-cols-2 xs:grid-cols-1 mt-1">
+
+                <div>
+                    <table class="custom-table">
+                        <thead>
+                            <tr>
+                                <th>Sufijo</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>-static</td>
+                                <td>Static</td>
+                            </tr>
+                            <tr>
+                                <td>-relative</td>
+                                <td>relative</td>
+                            </tr>
+                            <tr>
+                                <td>-absolute</td>
+                                <td>absolute</td>
+                            </tr>
+                            <tr>
+                                <td>-fixed</td>
+                                <td>fixed</td>
+                            </tr>
+                            <tr>
+                                <td>-sticky</td>
+                                <td>sticky</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <div>
+                    <label class="badge-outlined-info">Ejemplo HTML</label>
+                    <pre class="bordered-warning"><code class="language-html">&lt;div class=&quot;pos-static&quot;&gt;Flujo normal&lt;/div&gt;
+&lt;div class=&quot;pos-relative&quot;&gt;Relativo&lt;/div&gt;
+&lt;div class=&quot;pos-fixed top-0 left-0&quot;&gt;Fijo en la esquina&lt;/div&gt;
+&lt;div class=&quot;pos-sticky top-0&quot;&gt;Sticky al hacer scroll&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-4">
+            <h2 class="sub-title mb-1">Posicionamiento 
+            </h2>
+            <h2 class="sub-title mb-1">Top, Right, Bottom, Left</h2>
+            <hr class="h-rule bg-color-info">
+            <p class="mt-1">Clase para el posicionamiento de top <span class="badge-soft-info">top*</span> Right <span class="badge-soft-info">right*</span>,<br>Bottom <span class="badge-soft-info">botton*</span> y Left <span class="badge-soft-info">left*</span> </p>
+
+            <div class="grid md:grid-cols-2 xs:grid-cols-1 mt-1">
+
+                <div>
+                    <table class="custom-table">
+                        <thead>
+                            <tr>
+                                <th>Sufijo</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>*-0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>*-50</td>
+                                <td>50%</td>
+                            </tr>
+                            <tr>
+                                <td>*-100</td>
+                                <td>100%</td>
+                            </tr>
+                            <tr>
+                                <td>*-auto</td>
+                                <td>auto</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><div>
+                <label class="badge-outlined-info">Ejemplo HTML</label>
+                <pre class="bordered-warning"><code class="language-html">&lt;div class=&quot;top-0 %&quot;&gt; top 0&lt;/div&gt;
+&lt;div class=&quot;right-50&quot;&gt;Right 50 %&lt;/div&gt;
+&lt;div class=&quot;bottom-100&quot;&gt;Bottom 100 %&lt;/div&gt;
+&lt;div class=&quot;left-auto&quot;&gt;Left Auto&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        </section>
+
+        <section class="mt-4">
+            <h2 class="sub-title mb-1">Display</h2>
+            <hr class="h-rule bg-color-info">
+            <p class="mt-1">Clase para manejar el display <code class="badge-soft-info">d-*</code>.</p>
+
+            <div class="grid md:grid-cols-2 xs:grid-cols-1 mt-1">
+
+                <div>
+                    <table class="custom-table">
+                        <thead>
+                            <tr>
+                                <th>Sufijo</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>*-none</td>
+                                <td>none</td>
+                            </tr>
+                            <tr>
+                                <td>*-inline</td>
+                                <td>inline</td>
+                            </tr>
+                            <tr>
+                                <td>*-inline-block</td>
+                                <td>inline-block</td>
+                            </tr>
+                            <tr>
+                                <td>*-block</td>
+                                <td>block</td>
+                            </tr>
+                            <tr>
+                                <td>*-flex</td>
+                                <td>flex</td>
+                            </tr>
+                            <tr>
+                                <td>*-inline-flex</td>
+                                <td>inline-flex</td>
+                            </tr>
+                            <tr>
+                                <td>*-grid</td>
+                                <td>grid</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <div>
+                    <label class="badge-outlined-info">Ejemplo HTML</label>
+                    <pre class="bordered-warning"><code class="language-html">&lt;div class=&quot;d-none&quot;&gt;Oculto&lt;/div&gt;
+&lt;div class=&quot;d-flex&quot;&gt;Contenedor Flex&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="mt-4">
+            <h2 class="sub-title mb-1">Opacity</h2>
+            <hr class="h-rule bg-color-info">
+            <p class="mt-1">Clases para manejar opacidad con el prefijo <span class="badge-soft-info">opacity*</span>.
+            </p>
+
+            <div class="grid md:grid-cols-2 xs:grid-cols-1 mt-1">
+                <div>
+                    <table class="custom-table">
+                        <thead>
+                            <tr>
+                                <th>Sufijo</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>*-0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>*-25</td>
+                                <td>0.25</td>
+                            </tr>
+                            <tr>
+                                <td>*-50</td>
+                                <td>0.5</td>
+                            </tr>
+                            <tr>
+                                <td>*-75</td>
+                                <td>0.75</td>
+                            </tr>
+                            <tr>
+                                <td>*-100</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <label class="badge-outlined-info">Ejemplo HTML</label>
+                    <pre class="bordered-warning"><code class="language-html">&lt;div class="opacity-50"&gt;&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-4">
+            <h2 class="sub-title mb-1">Border Radius</h2>
+            <hr class="h-rule bg-color-info">
+            <p class="mt-1">Clases para redondear los bordes de cualquier elemento con el prefijo <span
+                    class="badge-soft-info">br*</span></p>
+
+            <div class="grid md:grid-cols-2 xs:grid-cols-1 mt-1">
+
+                <div>
+                    <table class="custom-table">
+                        <thead>
+                            <tr>
+                                <th>Sufijo</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>-none</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>-sm</td>
+                                <td>2.5px</td>
+                            </tr>
+                            <tr>
+                                <td>br</td>
+                                <td>5px (por defecto)</td>
+                            </tr>
+                            <tr>
+                                <td>-lg</td>
+                                <td>10px</td>
+                            </tr>
+                            <tr>
+                                <td>-xl</td>
+                                <td>20px</td>
+                            </tr>
+                            <tr>
+                                <td>-full</td>
+                                <td>50% (círculo)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div>
+                    <label class="badge-outlined-info">Ejemplo HTML</label>
+                    <pre class="bordered-warning"><code class="language-html">&lt;div class=&quot;br&quot;&gt;Default (5px)&lt;/div&gt;
+&lt;div class=&quot;br-lg&quot;&gt;Large (10px)&lt;/div&gt;
+&lt;div class=&quot;br-full&quot;&gt;Circular&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-4">
+            <h2 class="sub-title mb-1">Box Shadow </h2>
+            <hr class="h-rule bg-color-info">
+            <p class="mt-1">Clases para aplican sombras alrededor de los elementos, sufijo <span class="badge-soft-info">shadow*</span>.</p>
+          
+            <div class="grid md:grid-cols-2 xs:grid-cols-1 mt-1">
+              
+              <div>
+                <table class="custom-table">
+                  <thead>
+                    <tr>
+                      <th>Sufijo</th>
+                      <th>Descripción</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>*-none</td><td>Sin sombra</td></tr>
+                    <tr><td>*-sm</td><td>Sombra ligera</td></tr>
+                    <tr><td>shadow</td><td>Sombra por defecto</td></tr>
+                    <tr><td>*-md</td><td>Sombra mediana</td></tr>
+                    <tr><td>*-lg</td><td>Sombra grande</td></tr>
+                    <tr><td>*-xl</td><td>Sombra extra grande</td></tr>
+                    <tr><td>*-2xl</td><td>Sombra muy intensa</td></tr>
+                    <tr><td>*-3xl</td><td>Sombra extremadamente profunda</td></tr>
+                    <tr><td>*-boom</td><td>Sombra personalizada fuerte</td></tr>
+                    <tr><td>*-inner</td><td>Sombra interna (inset)</td></tr>
+                    <tr><td>*-outline</td><td>Contorno azul claro</td></tr>
+                  </tbody>
+                </table>
+              </div>
+          
+              <div>
+                <label class="badge-outlined-info">Ejemplo HTML</label>
+                <pre class="bordered-warning"><code class="language-html">&lt;div class=&quot;shadow-sm&quot;&gt;Sombra ligera&lt;/div&gt;
+&lt;div class=&quot;shadow-lg&quot;&gt;Sombra grande&lt;/div&gt;
+&lt;div class=&quot;shadow-inner&quot;&gt;Sombra interna&lt;/div&gt;
+&lt;div class=&quot;shadow-outline&quot;&gt;Contorno&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          
+            <p class="mt-2">Estas sombras se pueden aplicar en cualquier elemento y también combinar con otras utilidades.</p>
+          </section>
+          
+          <section class="mt-4">
+            <h2 class="sub-title mb-1">Tipografía: <br>Alineación, Estilo y Tamaño</h2>
+            <hr class="h-rule bg-color-info">
+          
+            <p class="mt-1">La clase <code class="badge-soft-info">text*</code> permite controlar la apariencia del texto a través de su alineación, estilo y tamaño.</p>
+          
+            
+            <div class="mt-3">
+              <h3 class="sub-title text-xl mb-1">Alineación </h3>
+              <div class="grid md:grid-cols-2 xs:grid-cols-1">
+                <div>
+                  <table class="custom-table">
+                    <thead>
+                      <tr><th>Sufijo</th><th>Valor</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>*-left</td><td>left</td></tr>
+                      <tr><td>*-center</td><td>center</td></tr>
+                      <tr><td>*-right</td><td>right</td></tr>
+                      <tr><td>*-justify</td><td>justify</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div>
+                  <label class="badge-outlined-info">Ejemplo HTML</label>
+                  <pre class="bordered-warning"><code class="language-html">&lt;p class=&quot;text-center&quot;&gt;Texto centrado&lt;/p&gt;
+&lt;p class=&quot;text-justify&quot;&gt;Texto justificado&lt;/p&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+          
+            <div class="mt-4">
+              <h3 class="sub-title text-xl mb-1">Estilo de Fuente</h3>
+              <div class="grid md:grid-cols-2 xs:grid-cols-1">
+                <div>
+                  <table class="custom-table">
+                    <thead>
+                      <tr><th>Sufijo</th><th>Valor</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>*-normal</td><td>normal</td></tr>
+                      <tr><td>*-italic</td><td>italic</td></tr>
+                      <tr><td>*-oblique</td><td>oblique</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div>
+                  <label class="badge-outlined-info">Ejemplo HTML</label>
+                  <pre class="bordered-warning"><code class="language-html">&lt;p class=&quot;text-italic&quot;&gt;Texto en cursiva&lt;/p&gt;
+&lt;p class=&quot;text-oblique&quot;&gt;Texto oblicuo&lt;/p&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+          
+            
+            <div class="mt-4">
+              <h3 class="sub-title text-xl mb-1">Tamaño de Fuente</h3>
+              <div class="grid md:grid-cols-2 xs:grid-cols-1">
+                <div>
+                  <table class="custom-table">
+                    <thead>
+                      <tr><th>Clase</th><th>Tamaño (rem)</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>*-xs</td><td>0.75rem</td></tr>
+                      <tr><td>*-sm</td><td>0.875rem</td></tr>
+                      <tr><td>*-base</td><td>1rem</td></tr>
+                      <tr><td>*-lg</td><td>1.125rem</td></tr>
+                      <tr><td>*-xl</td><td>1.25rem</td></tr>
+                      <tr><td>*-2xl</td><td>1.5rem</td></tr>
+                      <tr><td>*-3xl</td><td>1.875rem</td></tr>
+                      <tr><td>*-4xl</td><td>2.25rem</td></tr>
+                      <tr><td>*-5xl</td><td>3rem</td></tr>
+                      <tr><td>*-6xl</td><td>3.75rem</td></tr>
+                      <tr><td>*-7xl</td><td>4.5rem</td></tr>
+                      <tr><td>*-8xl</td><td>6rem</td></tr>
+                      <tr><td>*-9xl</td><td>8rem</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div>
+                  <label class="badge-outlined-info">Ejemplo HTML</label>
+                  <pre class="bordered-warning"><code class="language-html">&lt;p class=&quot;text-sm&quot;&gt;Texto pequeño&lt;/p&gt;
+&lt;p class=&quot;text-2xl&quot;&gt;Texto grande&lt;/p&gt;
+&lt;p class=&quot;text-6xl&quot;&gt;Texto gigante&lt;/p&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+
+            <!--EJEMPLOS DE LOS TAMAÑOS DE TEXTOS (CRISTIAN)-->
+            <div class="mt-4">
+                <h3 class="sub-title text-xl mb-1">Ejemplos de tamaños de fuentes</h3>
+                <hr class="h-rule bg-color-info">
+                <div class="mt-2">
+                    <p class="text-xs bg-color-primary-dark-6 mb-1 ml-0">Texto con tamaño XS</p>
+                    <p class="text-sm bg-color-primary-dark-6 mb-1 ml-0">Texto con tamaño SM</p>
+                    <p class="text-base bg-color-primary-dark-6 mb-1 ml-0">Texto con tamaño BASE</p>
+                    <p class="text-lg bg-color-primary-dark-6 mb-1 ml-0">Texto con tamaño LG</p>
+                    <p class="text-2xl bg-color-primary-dark-6 mb-1 ml-0">Texto con tamaño 2XL</p>
+                    <p class="text-3xl bg-color-primary-dark-6 mb-1 ml-0">Texto con tamaño 3XL</p>
+                    <p class="text-6xl bg-color-primary-dark-6 mb-1 ml-0">Texto con tamaño 6XL</p>
+                </div>
+            </div>
+
+            <div class="mt-4 row">
+
+                <div>
+                    <div class="borders-are-rounded">
+                        <h2 class="text-xl">Clases para la manipulación de titulos</h2>
+
+                    <ul>
+
+                        <!--EXPLICACION DE CLASES PARA MANIPULAR TEXTOS (CRISTIAN)-->
+                        <li class="mb-1 mt-1"><span class="text-lg text-red bg-color-primary-dark-9 br fw-bold">theme-font</span> :
+                            Aplica un tema específico al texto</li>
+
+                            <h2 class="text-xl badge-outlined-info m-1">Ejemplo</h2><span class="text-xl theme-font m-1">Texto con la fuente aplicada</span>
+
+                        <li class="mb-1 mt-1"><span class="text-lg text-red bg-color-primary-dark-9 br fw-bold">title</span>,
+                            <span class="text-lg text-red bg-color-primary-dark-9 br fw-bold">sub-title</span> : 
+                            Ajustan el tamaño de fuente automáticamente segun el ancho de la pantalla del dispositivo
+                        </li>
+
+                        <li class="mb-1 mt-1"><span class="text-lg text-red bg-color-primary-dark-9 br fw-bold">no-border</span> : 
+                            Elimina completamente los bordes de un elemento
+                        </li>
+
+                        <li class="mb-1 mt-1"><span class="text-lg text-red bg-color-primary-dark-9 br fw-bold">text-is-centered</span> : 
+                            Centra el texto de un elemento, también se extiende a los hijos dentro del elemento para que tomen la misma alineación 
+                        </li>
+
+                        <li class="mb-1 mt-1"><span class="text-lg text-red bg-color-primary-dark-9 br fw-bold">text-is-left</span> : 
+                            Alinea el texto de un elemento a la izquierda, también se extiende a los hijos dentro del elemento para que tomen la misma alineación 
+                        </li>
+
+                        <li class="mb-1 mt-1"><span class="text-lg text-red bg-color-primary-dark-9 br fw-bold">text-is-right</span> : 
+                            Alinea el texto de un elemento a la derecha, también se extiende a los hijos dentro del elemento para que tomen la misma alineación 
+                        </li>
+
+                        <div class="bg-color-primary-dark-6 mb-1 mt-1 text-2xl text-is-centered">
+                            <h1>Texto centrado</h1>
+                            <p class="text-lg m-1 pb-1">Hijo de este elemento</p>
+                        </div>
+
+                        <div class="bg-color-primary-dark-6 mb-1 mt-1 text-2xl text-is-left">
+                            <h1>Texto alineado a la izquierda</h1>
+                            <p class="text-lg mb-1 mt-1 pb-1">Hijo de este elemento</p>
+                        </div>   
+
+                        <div class="bg-color-primary-dark-6 mb-1 mt-1 text-2xl text-is-right">
+                            <h1>Texto alineado a la derecha</h1>
+                            <p class="text-lg mb-1 mt-1 pb-1">Hijo de este elemento</p>
+                        </div>  
+                        
+                    </ul>
+
+                    <ul>
+                        <!--EXPLICACION DE CLASES PARA MANIPULAR TÍTULOS (CRISTIAN)-->
+                        <li class="mb-1 mt-1"><span class="text-lg text-red bg-color-primary-dark-9 br fw-bold">title-is-centered</span> : 
+                            Centra el título de un elemento 
+                        </li>
+
+                        <li class="mb-1 mt-1"><span class="text-lg text-red bg-color-primary-dark-9 br fw-bold">title-is-left</span> : 
+                            Alinea el título de un elemento a la izquierda 
+                        </li>
+
+                        <li class="mb-1 mt-1"><span class="text-lg text-red bg-color-primary-dark-9 br fw-bold">title-is-right</span> : 
+                            Alinea el título de un elemento a la derecha
+                        </li>
+
+                        <div class="bg-color-primary-dark-6 mb-1 mt-1 title-is-centered">
+                            <h1 class="mb-1 text-xl p-1">Título centrado</h1>
+                            <p class="p-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id ea ipsa quibusdam at 
+                                unde eligendi, voluptatem tempore ad magni, excepturi amet vero asperiores ullam repudiandae natus molestias, 
+                                vitae deleniti voluptates.</p>
+                        </div>
+
+                        <div class="bg-color-primary-dark-6 mb-1 mt-1 title-is-left">
+                            <h1 class="mb-1 text-xl p-1">Título alineado a la izquierda</h1>
+                            <p class="p-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id ea ipsa quibusdam at 
+                                unde eligendi, voluptatem tempore ad magni, excepturi amet vero asperiores ullam repudiandae natus molestias, 
+                                vitae deleniti voluptates.</p>
+                        </div>   
+
+                        <div class="bg-color-primary-dark-6 mb-1 mt-1 title-is-right">
+                            <h1 class="mb-1 text-xl p-1">Título alineado a la derecha</h1>
+                            <p class="p-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id ea ipsa quibusdam at 
+                                unde eligendi, voluptatem tempore ad magni, excepturi amet vero asperiores ullam repudiandae natus molestias, 
+                                vitae deleniti voluptates.</p>
+                        </div>  
+
+                    </ul>
+
+                    </div>
+                        
+                </div>
+                
+            </div>
+        </section>
+
+    </main>
+<script src="../main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-html.min.js"></script>
+</body>
+
+</html>

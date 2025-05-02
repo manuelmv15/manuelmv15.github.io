@@ -4,166 +4,597 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Astro-W</title>
+    <title>AstroW</title>
     <!-- <link rel="stylesheet" href="https://cdn.statically.io/gh/manuelmv15/AstroW/main/css/style.css"> -->
-    <link rel="stylesheet" href="css/style.css">
-
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manuelmv15/AstroW/css/style.css">
+    <style>
+        .github-badges img {
+            vertical-align: middle;
+            height: 24px;
+            margin-left: 0.5rem;
+        }
+    </style>
 </head>
 
-<body class="bg-color-blue-dark-2">
+<body class="">
 
 
-    <nav id="inicio" class="navbar-left">
-        <ul>
-            <li><a href="" class="text-black-override">Opcion 1</a></li>
-            <li><a href="" class="text-black-override">Opcion 2</a></li>
-            <li><a href="" class="text-black-override">Opcion 3</a></li>
-        </ul>
-    </nav>
 
-    <div class="grid lg:grid-cols-5">
+    <header class="nav-header" id="site-header">
+        <div class="nav-header-wrapper">
+            <div class="nav-left">
 
-        <div class="bg-color-blue-dark-2 w-75 pos-sticky top-0">
-            <nav class="pos-sticky top-0 pt-2 pl-1">
-                <ul>
-                    
-                        
-                    <li><a href="documentation.html" class="no-decoration link-hover-info text-red-light-2 text-2xl">Inicio - Instalación</a>
-                        
-                    </li>
-
-                    <li><a href="sections/introduccion.html" target="main-frame" class=" no-decoration link-hover-info text-pitch-light-2 text-2xl">Introducción</a>
-
-                        
-                    </li>
-                    
-                    <li><a href="sections/componentes.html" class="no-decoration link-hover-info text-yellow-light-2 text-2xl">Componentes</a>
-
-                    </li>
-                    <li><a href="sections/formularios.html" class="no-decoration link-hover-info text-danger-light-2 text-2xl">Formularios</a></li>
-                    <li><a href="#layout" class="no-decoration link-hover-info text-primary text-2xl">Layout</a></li>
-                    <li><a href="#utilidades" class="no-decoration link-hover-info text-blue-light-9 text-2xl">Utilidades</a></li>
-
-
-                    <li class="mb-2 mt-2"><a href="documentation.html" class="no-decoration link-hover-info text-link-light-2 text-2xl">🌌</a>
-                </ul>
-            </nav>
-        </div>
-
-
-        <div class="container-full bg-color-red h-screen col-span-4">
-
-            
-
-            <div class="row g-4 bg-color-blue-dark-3">
-
-
-                <div class="lg:col-10 bg-color-blue m-0 m-auto">
-
-
-                    <main id="main-content" class="bg-color-blue-dark-3">
-
-                        <section id="introduccion" class="p-1 text-area-gray">
-                            <h2 class="title theme-font pt-2 mb-2">ASTROW</h2>
-                            <p class="text-xl">Bienvenido a la documentación de tu librería de CSS personalizada...</p>
-                            <p class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam excepturi
-                                cum minima laudantium dignissimos! Obcaecati quis blanditiis totam ducimus iusto
-                                accusantium iste beatae voluptates ea optio vel quia eveniet facere, accusamus ex
-                                molestias odio placeat ab. Veniam doloribus est quisquam suscipit, dolorum neque. Ab,
-                                nihil eligendi, assumenda eius quis suscipit error dicta, earum minima dolore
-                                voluptates? A quae, itaque ducimus cumque recusandae suscipit quisquam delectus et! Quo
-                                quae consectetur rerum. Optio a quibusdam possimus rem velit aperiam praesentium quos
-                                obcaecati nam officiis libero vero aliquid, mollitia assumenda voluptatem. Qui, illo
-                                odit veniam eius velit quia animi at atque maiores accusantium!</p>
-                        </section>
-
-                        <section id="instalacion" class="p-1 text-area-red">
-
-                            <h2 class="mt-2 mb-2 title theme-font">Instalación</h2>
-                            <p>Instrucciones para instalar la librería en tu proyecto...</p>
-                            <p class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam excepturi
-                                cum minima laudantium dignissimos! Obcaecati quis blanditiis totam ducimus iusto
-                                accusantium iste beatae voluptates ea optio vel quia eveniet facere, accusamus ex
-                                molestias odio placeat ab. Veniam doloribus est quisquam suscipit, dolorum neque. Ab,
-                                nihil eligendi, assumenda eius quis suscipit error dicta, earum minima dolore
-                                voluptates? A quae, itaque ducimus cumque recusandae suscipit quisquam delectus et! Quo
-                                quae consectetur rerum. Optio a quibusdam possimus rem velit aperiam praesentium quos
-                                obcaecati nam officiis libero vero aliquid, mollitia assumenda voluptatem. Qui, illo
-                                odit veniam eius velit quia animi at atque maiores accusantium!</p>
-                        </section>
-
-                        <section id="componentes" class="p-1 text-area-gray"> <!--SECCION COMPONENTES-->
-                            <h2 class="mt-2 mb-2 title theme-font">Componentes</h2>
-
-                            <h6 id="botones" class="title mb-1">Botones</h6>
-                            <p>Botones clasicos, en diferentes, colores, tamaños y estilos</p>
-
-                            <div class="grid grid-cols-1 md:grid-cols-2">
-                                <div class="mt-1 mb-1">
-                                    <div class="d-flex justify-space-between">
-                                        <p>Botones por defecto</p>
-
-                                        <label class="badge-outlined-info">Ejemplo</label>
-                                    </div>
-                                    <br>
-                                    <button class="btn br-lg">Boton</button>
-                                    <button class="btn-info-sm br-lg text-white">Boton</button>
-                                    <button class="btn-outlined-info-lg br-lg ">Boton</button>
-                                    <button class="btn-complement-pitch-xl br-lg">Boton</button>
-                                    
-
-
-                                    
-                                    
-                                </div>
-
-                                <div class="mt-1 mb-1">
-                                    <pre class="">
-                                        <code class="language-python">
-                                            &lt;div class="container"&gt;
-                                            &lt;p&gt;Texto de ejemplo&lt;/p&gt;
-                                            &lt;/div&gt;
-                                        </code>
-                                    </pre>
-                                </div>
-                            </div>
-
-                            <p class="text-xl"></p>
-                        </section>
-
-                        <section id="layout" class="p-1 text-area-gray">
-                            <h2 class="mt-2 mb-2 title theme-font">Layout</h2>
-                            <p>Descripción de las clases para el sistema de filas y columnas...</p>
-                            <p class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam excepturi
-                                cum minima laudantium dignissimos! Obcaecati quis blanditiis totam ducimus iusto
-                                accusantium iste beatae voluptates ea optio vel quia eveniet facere, accusamus ex
-                                molestias odio placeat ab. Veniam doloribus est quisquam suscipit, dolorum neque. Ab,
-                                nihil eligendi, assumenda eius quis suscipit error dicta, earum minima dolore
-                                voluptates? A quae, itaque ducimus cumque recusandae suscipit quisquam delectus et! Quo
-                                quae consectetur rerum. Optio a quibusdam possimus rem velit aperiam praesentium quos
-                                obcaecati nam officiis libero vero aliquid, mollitia assumenda voluptatem. Qui, illo
-                                odit veniam eius velit quia animi at atque maiores accusantium!</p>
-                        </section>
-
-                        <section id="utilidades" class="p-1 text-area-pitch">
-                            <h2 class="mt-2 mb-2 title theme-font">Utilidades</h2>
-                            <p>Clases para márgenes, padding, alineación y más...</p>
-                        </section>
-                        
-                    </main>
+                <div>
+                    <a href="index.html" class="nav-items-header">Inicio</a>
+                </div>
+                <div>
+                    <a href="formularios/formularios.html" class="nav-items-header">Formularios</a>
                 </div>
 
+                <div>
+                    <a href="componentes/componentes.html" class="nav-items-header">Componentes</a>
+                </div>
+
+                <div>
+                    <a href="layout/layout.html" class="nav-items-header">Layout</a>
+                </div>
+
+                <div>
+                    <a href="utilidades/utilidades.html" class="nav-items-header">Utilidades</a>
+                </div>
+
+
+            </div>
+
+            <div class="nav-right">
+
+                <div class="nav-brand">
+                    <img src="icons/logo.svg" alt="" class="nav-brand-logo">
+                    <span class="nav-brand-name theme-font">AstroW</span>
+                </div>
+
+                <div class="nav-menu-container">
+                    <div class="nav-menu" id="menuAlt">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="nav-mobile-links">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="formularios/formularios.html">Formularios</a></li>
+                <li><a href="componentes/componentes.html">Componentes</a></li>
+                <li><a href="layout/layout.html">Layout</a></li>
+                <li><a href="utilidades/utilidades.html">Utilidades</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="p-2 mt-3 bg-color-blue-dark-6 text-area-gray-light-4 container-bordered-xl">
+
+
+        <section class="mt-3 mb-3">
+            <h2 class="theme-font title">Bienvenido a AstroW</h2>
+            <div class="mt-1">
+                <hr class="h-rule bg-color-orange">
+            </div>
+            <p class="mt-1 text-xl">
+                <span class="text-orange">AstroW</span> es una <span class="text-gray-dark-3">librería CSS</span> basada
+                en el album <span class="text-orange">ASTROWORDL</span> del artista <span class="text-orange"> Travis
+                    Scott</span>.
+            </p>
+        </section>
+
+
+        <section class="mt-3 mb-3">
+            <h2 class="theme-font title">Colaboradores</h2>
+
+            <div class="mt-1">
+                <hr class="h-rule bg-color-orange">
+            </div>
+
+            <div class="github-badges">
+                <ul class="mt-1 ml-3">
+                    <li class="mt-2 text-xl">
+                        Jeferson Alexis De La Cruz Ventura
+                        <span class="badge-outlined-info-lg ml-1">DV23003</span>
+                        <a class="ml-1" href="https://github.com/JefersonDeLaCruz" target="_blank">
+                            <img src="https://img.shields.io/badge/GITHUB-JEFERSONDELACRUZ-181717?style=flat&logo=github&logoColor=white"
+                                alt="GitHub - jefersonDeLaCruz" />
+                        </a>
+                    </li>
+                    <li class="mt-2 text-xl">
+                        Carlos Manuel Melendez Villatoro
+                        <span class="badge-outlined-info-lg ml-1">MANUELMV15</span>
+                        <a class="ml-1" href="https://github.com/manuelmv15" target="_blank">
+                            <img src="https://img.shields.io/badge/GITHUB-MANUELMV15-181717?style=flat&logo=github&logoColor=white"
+                                alt="GitHub - manuelmv15" />
+                        </a>
+                    </li>
+                    <li class="mt-2 text-xl">
+                        Cristian Alexis Ventura Ventura
+                        <span class="badge-outlined-info-lg ml-1">VV23011</span>
+                        <a class="ml-1" href="https://github.com/kristiankovic" target="_blank">
+                            <img src="https://img.shields.io/badge/GITHUB-KRISTIANKOVIC-181717?style=flat&logo=github&logoColor=white"
+                                alt="GitHub - kristiankovic" />
+                        </a>
+                    </li>
+                    <li class="mt-2 text-xl">
+                        David Elias Romero Claros
+                        <span class="badge-outlined-info-lg ml-1">RC23030</span>
+                        <a class="ml-1" href="https://github.com/luxoritur" target="_blank">
+                            <img src="https://img.shields.io/badge/GITHUB-LUXORITUR-181717?style=flat&logo=github&logoColor=white"
+                                alt="GitHub - luxoritur" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section>
+            <h1 class="title theme-font">Como instalar AstroW</h1>
+
+            <div class="mt-1">
+                <hr class="h-rule bg-color-orange">
+            </div>
+
+            <span class="badge-outlined-danger-xl m-1">Opción 1</span>
+
+            <p class="text-xl">Puedes importar directamente el archivo CSS usando JsDelivr</p>
+
+            <div class="max-w-75 m-auto">
+                <pre class="br bordered-warning"><code class="language-html">
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/manuelmv15/AstroW/css/style.css&quot;&gt;
+            </code></pre>
             </div>
 
 
 
-        </div>
-    </div>
+
+            <span class="badge-outlined-success-xl m-1">Opción 2</span>
+
+            <p class="text-xl">También puedes importar el archivo CSS vía Statically CDN</p>
+
+            <div class="max-w-75 m-auto">
+                <pre class="br bordered-warning"><code class="language-html">
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.statically.io/gh/manuelmv15/AstroW/main/css/style.css&quot;&gt;
+            </code></pre>
+            </div>
 
 
 
-    
+            <span class="badge-outlined-info-xl m-1">Opción 3</span>
+
+            <p class="text-xl">Clonar el repositorio de GitHub</p>
+
+            <div class="max-w-75 m-auto d-flex justify-center">
+                <pre class="br w-fit bordered-warning"><code class="language-shell">
+git clone https://github.com/manuelmv15/AstroW
+            </code></pre>
+            </div>
+
+
+            <span class="badge-outlined-warning-xl m-1">Opción 4</span>
+
+
+
+            <div class="max-w-75 ai-center m-auto row justify-space-around g-2">
+                <div>
+                    <p class="text-xl">Descargar el .ZIP con el código de la librería</p>
+                </div>
+                <div>
+                    <a href="https://github.com/manuelmv15/AstroW/archive/refs/heads/main.zip"
+                        class="btn-outlined-info br">Descargar</a>
+                </div>
+            </div>
+        </section>
+        <section class="mt-3 mb-3">
+            <h2 class="theme-font title">introduccion a AstroW</h2>
+            <div class="mt-1">
+                <hr class="h-rule bg-color-orange">
+            </div>
+            <p class="mt-1 text-xl">
+                <span class="text-orange">AstroW</span> tiene diferentes <span class="text-gray-dark-3">colores</span>
+                para usarse.
+            </p>
+
+            <div>
+                <!--colores-->
+                <section class="mt-4">
+                    <h2 class="text-4xl theme-font mt-1 mb-1">Colores </h2>
+                    <div class="mt-1">
+                        <hr class="h-rule bg-color-info">
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2 mt-2">
+
+                        <div class="p-2 br text-white bg-color-orange">orange</div>
+                        <div class="p-2 br text-black bg-color-yellow">yellow</div>
+                        <div class="p-2 br text-white bg-color-red">red</div>
+                        <div class="p-2 br text-white bg-color-pitch">pitch</div>
+                        <div class="p-2 br text-black bg-color-gray">gray</div>
+                        <div class="p-2 br text-white bg-color-blue">blue</div>
+                        <div class="p-2 br text-white bg-color-link">link</div>
+                        <div class="p-2 br text-white bg-color-primary">primary</div>
+                        <div class="p-2 br text-white bg-color-info">info</div>
+                        <div class="p-2 br text-white bg-color-success">success</div>
+                        <div class="p-2 br text-black bg-color-warning">warning</div>
+                        <div class="p-2 br text-white bg-color-danger">danger</div>
+                        <div class="p-2 br text-white bg-color-black">black</div>
+                        <div class="p-2 br text-black bg-color-white">white</div>
+                    </div>
+                </section>
+                <!--variacion de colores-->
+                <section class="mt-4 text-xl">
+                    <h2 class="text-4xl theme-font ">Variaciones de color</h2>
+                    <div class="mt-1">
+                        <hr class="h-rule bg-color-info">
+                    </div>
+                    <p class="mt-1 ml-2 text-xl">
+                        Cada color dispone de <span class="">variaciones de tonos más claros y más oscuros</span> .
+                    </p>
+
+                    <p class="mt-1 ml-2">
+                        Puedes usar clases en este formato:
+                    </p>
+
+                    <ul class="list-style-disc ml-3 mt-1 ">
+                        <li><code class="text-primary">*-light-1</code> hasta <code
+                                class="text-primary">*-light-9</code> para los tonos más claros</li>
+                        <li><code class="text-danger">*-dark-1</code> hasta <code class="text-danger">*-dark-9</code>
+                            tonos más oscuros</li>
+                    </ul>
+
+
+
+                    <div class="mt-2 p-2 bg-color-blue br ">
+                        <p class="mt-1 mb-1">Ejemplo visual :</p>
+                        <div class="grid grid-cols-9 lg:grid-cols-9 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1">
+                            <div class="p-2 text-black text-center bg-color-primary-light-1">L1</div>
+                            <div class="p-2 text-black text-center bg-color-primary-light-2">L2</div>
+                            <div class="p-2 text-black text-center bg-color-primary-light-3">L3</div>
+                            <div class="p-2 text-black text-center bg-color-primary-light-4">L4</div>
+                            <div class="p-2 text-black text-center bg-color-primary-light-5">L5</div>
+                            <div class="p-2 text-black text-center bg-color-primary-light-6">L6</div>
+                            <div class="p-2 text-black text-center bg-color-primary-light-7">L7</div>
+                            <div class="p-2 text-black text-center bg-color-primary-light-8">L8</div>
+                            <div class="p-2 text-black text-center bg-color-primary-light-9">L9</div>
+
+                            <div class="p-2 text-center text-white bg-color-primary-dark-1">D1</div>
+                            <div class="p-2 text-center text-white bg-color-primary-dark-2">D2</div>
+                            <div class="p-2 text-center text-white bg-color-primary-dark-3">D3</div>
+                            <div class="p-2 text-center text-white bg-color-primary-dark-4">D4</div>
+                            <div class="p-2 text-center text-white bg-color-primary-dark-5">D5</div>
+                            <div class="p-2 text-center text-white bg-color-primary-dark-6">D6</div>
+                            <div class="p-2 text-center text-white bg-color-primary-dark-7">D7</div>
+                            <div class="p-2 text-center text-white bg-color-primary-dark-8">D8</div>
+                            <div class="p-2 text-center text-white bg-color-primary-dark-9">D9</div>
+                        </div>
+                    </div>
+
+                    <p class="text-xl mt-2">Estos se pueden utilizar de diferentes maneras</p>
+                </section>
+
+                <!--text-->
+                <section class="mt-4">
+                    <h2 class="text-4xl theme-font">text</h2>
+                    <div class="mt-1">
+                        <hr class="h-rule bg-color-info">
+                    </div>
+                    <div class="grid md:grid-cols-2 xs:grid-cols-1 mt-1">
+
+                        <div>
+                            <table class="custom-table text-center">
+                                <thead class="text-center">
+                                    <tr>
+                                        <th>Tipos</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>text-{color}</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>text-{color}-light-{1-9}</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>text-{color}-dark-{1-9}</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>text-{color}-override</td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div>
+                            <label class="badge-outlined-info">Ejemplo HTML</label>
+<pre class="bordered-warning"><code class="language-html">&lt;p class="text-orange"&gt;Hellow word&lt;/p&gt;
+&lt;p class="text-gray-dark-3"&gt;Hellow word&lt;/p&gt;
+</code></pre>
+                        </div>
+                    </div>
+                </section>
+
+                <!--text area-->
+                <section class="mt-4">
+                    <h2 class="text-4xl theme-font">Áreas de texto</h2>
+                    <div class="mt-1">
+                        <hr class="h-rule bg-color-info">
+                    </div>
+
+                    <div class="grid md:grid-cols-2 xs:grid-cols-1 mt-1">
+
+                        <div>
+                            <table class="custom-table text-center">
+                                <thead>
+                                    <tr>
+                                        <th>Tipos</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>text-area-{color}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>text-area-{color}-ov <span class="text-info">!important</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>text-area-{color}-light-{1-9}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>text-area-{color}-dark-{1-9}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div>
+                            <label class="badge-outlined-info">Ejemplo HTML</label>
+                            <pre class="bordered-warning"><code class="language-html">&lt;div class=&quot;text-area-blue-dark-3&quot;&gt;
+    &lt;h2&gt;Título destacado&lt;/h2&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;text-area-orange-light-4&quot;&gt;
+    &lt;h3&gt;Subtítulo&lt;/h3&gt;
+  &lt;/div&gt;</code></pre>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!--hover-->
+                <section class="mt-4">
+                    <h2 class="text-4xl theme-font">hover</h2>
+                    <div class="mt-1">
+                        <hr class="h-rule bg-color-info">
+                    </div>
+                    <div class="grid md:grid-cols-2 xs:grid-cols-1 mt-1">
+
+                        <div>
+                            <table class="custom-table text-center">
+                                <thead class="text-center">
+                                    <tr>
+                                        <th>Tipos</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>text-hover-{color}</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>text-hover-{color}-light-{1-9}</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>text-hover-{color}-dark-{1-9}</td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div>
+                            <label class="badge-outlined-info">Ejemplo HTML</label>
+                            <pre class="bordered-warning"><code class="language-html">&lt;p class="text-hover-info"&gt;hellow word&lt;/p&gt;
+&lt;p class="text-hover-darger-dark-3"&gt;Padding left&lt;/p&gt;;</code></pre>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Links-->
+                <section class="mt-4">
+                    <h2 class="text-4xl theme-font">Links</h2>
+                    <div class="mt-1">
+                        <hr class="h-rule bg-color-info">
+                    </div>
+                    <div class="grid md:grid-cols-2 xs:grid-cols-1 mt-1">
+
+                        <div>
+                            <table class="custom-table text-center">
+                                <thead>
+                                    <tr>
+                                        <th>Tipos</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>link-{color}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>link-hover-{color}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>link-active-{color}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>link-visited-{color}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>link-style-{color}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>link-style-{color}-light-{1-9}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>link-style-{color}-dark-{1-9}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div>
+                            <label class="badge-outlined-info">Ejemplo HTML</label>
+                            <pre class="bordered-warning"><code class="language-html">
+&lt;a href=&quot;#&quot; class=&quot;link-primary&quot;&gt;Enlace estilizado&lt;/a&gt;
+                  
+&lt;a href=&quot;#&quot; class=&quot;link-hover-success&quot;&gt;Hover verde&lt;/a&gt;
+                  </code></pre>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!--border-->
+                <section class="mt-4">
+                    <h2 class="text-4xl theme-font">Bordes de color</h2>
+                    <div class="mt-1">
+                        <hr class="h-rule bg-color-info">
+                    </div>
+                    <div class="grid md:grid-cols-2 xs:grid-cols-1 mt-1">
+
+                        <div>
+                            <table class="custom-table text-center">
+                                <thead>
+                                    <tr>
+                                        <th>Tipos</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>bordered-{color}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        
+                        <div >
+                            <label class="badge-outlined-info">Ejemplo HTML</label>
+                            <pre class="bordered-warning"   ><code class="language-html">&lt;div class=&quot;bordered-danger p-2&quot;&gt;
+  Caja con borde rojo
+&lt;/div&gt;</code></pre>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!--decoracion-->
+                <section class="mt-4">
+                    <h2 class="text-4xl theme-font">Decoración de texto</h2>
+                    <div class="mt-1">
+                        <hr class="h-rule bg-color-info">
+                    </div>
+                    <div class="grid md:grid-cols-2 xs:grid-cols-1 mt-1">
+
+                        
+                        <div>
+                            <table class="custom-table text-center">
+                                <thead>
+                                    <tr>
+                                        <th>Tipos</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>no-decoration</td>
+                                    </tr>
+                                    <tr>
+                                        <td>underline-hover</td>
+                                    </tr>
+                                    <tr>
+                                        <td>no-underline-hover</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        
+                        <div>
+                            <label class="badge-outlined-info">Ejemplo HTML</label>
+                            <pre class="bordered-warning"><code class="language-html">&lt;a href=&quot;#&quot; class=&quot;no-decoration&quot;&gt;
+    Sin subrayado nunca &lt;/a&gt;
+
+&lt;a href=&quot;#&quot; class=&quot;underline-hover&quot;&gt;
+    Subrayado solo al pasar el mouse &lt;/a&gt;        </code></pre>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!--fondo-->
+                <section class="mt-4">
+                    <h2 class="text-4xl theme-font">Fondo</h2>
+                    <div class="mt-1">
+                        <hr class="h-rule bg-color-info">
+                    </div>
+                    <div class="grid md:grid-cols-2 xs:grid-cols-1 mt-1">
+
+                        <div>
+                            <table class="custom-table text-center color-orange">
+                                <thead class="text-center">
+                                    <tr>
+                                        <th>Tipos</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>bg-color-{color}</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>bg-color-{color}-light-{1-9}</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>bg-color-{color}-dark-{1-9}</td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div>
+                            <label class="badge-outlined-info">Ejemplo HTML</label>
+                            <pre class="bordered-warning"><code class="language-html">&lt;div class=&quot;bg-color-danger p-2&quot;&gt;
+  Caja de color danger
+&lt;/div&gt;</code></pre>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+        </section>
+    </main>
+
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-html.min.js"></script>
+
 </body>
 
 </html>

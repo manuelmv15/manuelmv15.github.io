@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astro-W</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+
+</head>
+
+<body class="">
+
+
+    <header>
+        <div class="header-wrapper">
+            <div class="left">
+                <div>
+                    <a href="../index.html">
+                        <p class=" ">Inicio</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="../formularios/formularios.html">
+                        <img src="../icons/star.svg" alt="" class="item-icon">
+                        <p class="item-title">Formularios</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="componentes.html">
+                        <img src="../icons/star.svg" alt="" class="item-icon">
+                        <p class="item-title">Componentes</p>
+
+                    </a>
+                </div>
+                <div>
+                    <a href="../layout/layout.html">
+                        <img src="../icons/star.svg" alt="" class="item-icon">
+                        <p class="item-title">Layout</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="../utilidades/utilidades.html">
+                        <img src="../icons/star.svg" alt="" class="item-icon">
+                        <p class="item-title">Utilidades</p>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="right">
+
+                <div class="brand">
+                    <img src="../icons/logo.svg" alt="" class="brand-logo">
+                    <span class="brand-name theme-font">AstroW</span>
+                </div>
+
+                <div class="menu-container">
+                    <div class="menu" id="menu">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <!-- 🔽 Modal mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <a href="../index.html">Inicio</a>
+            <a href="../formularios/formularios.html">Formularios</a>
+            <a href="componentes.html">Componentes</a>
+            <a href="../layout/layout.html">Layout</a>
+            <a href="../utilidades/utilidades.html">Utilidades</a>
+        </div>
+    </div>
+
+    <main class="p-2 mt-2 bg-color-blue-dark-6 text-area-gray-light-4 container-bordered-xl" style="overflow: hidden;">
+
+
+        <h2 class="mt-2 mb-2 title theme-font text-center">COMPONENTES</h2>
+        <div class="d-flex justify-space-between ai-center">
+            <h6 id="botones" class="title mb-1">Botones</h6>
+            <a href="https://github.com/manuelmv15/AstroW/blob/main/AstroW/componentes/_buttons.scss" target="_blank"
+                class="link-style-info">Ver código fuente</a>
+        </div>
+
+        <div class="mt-1 mb-1">
+            <hr class="h-rule bg-color-info">
+        </div>
+
+        <p>Botones clásicos, en diferentes, colores, tamaños y estilos</p>
+
+        <label class="badge-outlined-info m-2">Ejemplo</label>
+
+        <div class="row g-2 justify-center borders-are-rounded">
+            <button class="btn br-lg lg:col-1">Botón</button>
+            <button class="btn-info br-lg text-white fw-bold lg:col-1">Botón</button>
+            <button class="btn-outlined-info br-lg fw-bold lg:col-1">Botón</button>
+            <button class="btn-complement-link br-lg fw-bold lg:col-1">Botón</button>
+        </div>
+
+        <div class="mt-2">
+            <h6 class="fw-bold mb-2">Clases para crear botones</h6>
+
+            <ul class="">
+                <li class="m-1"><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">btn</span>:
+                    Botón base sin fondo, Ideal para mantener un estilo minimalista.</li>
+                <li class="m-1"><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">btn-{color}</span>:
+                    Botón con fondo sólido basado en el color especificado.</li>
+                <li class="m-1"><span
+                        class="text-md text-red bg-color-primary-dark-9 br fw-bold">btn-outlined-{color}</span>:
+                    Botón con fondo blanco y borde coloreado.</li>
+                <li class="m-1"><span
+                        class="text-md text-red bg-color-primary-dark-9 br fw-bold">btn-complement-{color}</span>:
+                    Botón con estilo complementario: el color de fondo lo definís vos, y al hacer
+                    hover, se intercambian los colores del texto y el fondo.</li>
+            </ul>
+        </div>
+
+        <label class="badge-outlined-info m-2">Ejemplo en html</label>
+
+        <div class="d-flex justify-center br">
+            <!-- para envolver el code -->
+            <div class="max-w-75">
+                <pre><code class="language-html">
+&lt;button class=&quot;btn br-lg&quot;&gt;Boton&lt;/button&gt;<br />
+&lt;button class=&quot;btn-info br-lg&quot;&gt;Boton&lt;/button&gt;<br />
+&lt;button class=&quot;btn-outlined-info br-lg &quot;&gt;Boton&lt;/button&gt;<br />
+&lt;button class=&quot;btn-complement-link br-lg&quot;&gt;Boton&lt;/button&gt;    
+                </code></pre>
+            </div>
+        </div>
+
+
+        <!-- vivo aqui loco -->
+
+        <span class="badge-outlined-orange-xl mb-1">Sizes</span>
+        <p>Variaciones de tamanos para los diferentes tipos de botones</p>
+
+        <div class="mt-1 mb-1">
+            <div class="d-flex justify-space-between">
+                <label class="badge-outlined-info">Ejemplo</label>
+            </div>
+            <br>
+            <div class="row g-4 justify-center ai-center borders-are-rounded">
+                <button class="btn-sm br-lg ">Botón</button>
+                <button class="btn-info-md br-lg text-white fw-bold ">Botón</button>
+                <button class="btn-outlined-info-lg br-lg fw-bold ">Botón</button>
+                <button class="btn-complement-link-xl br-lg fw-bold ">Botón</button>
+            </div>
+
+            <div class="mt-2">
+                <h6 class="fw-bold mb-2">Clases para crear botones con las diferentes variaciones de tamaño.</h6>
+                <ul class="">
+                    <li class="m-1"><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">btn-{size}</span>
+                    </li>
+                    <li class="m-1"><span
+                            class="text-md text-red bg-color-primary-dark-9 br fw-bold">btn-{color}-{size}</span></li>
+                    <li class="m-1"><span
+                            class="text-md text-red bg-color-primary-dark-9 br fw-bold">btn-outlined-{color}-{size}</span>
+                    </li>
+                    <li class="m-1"><span
+                            class="text-md text-red bg-color-primary-dark-9 br fw-bold">btn-complement-{color}-{size}</span>
+                    </li>
+                </ul>
+            </div>
+
+
+            <label class="badge-outlined-info">Ejemplo en html</label>
+            <div class="max-w-75 m-auto">
+                <pre><code class="language-html">
+&lt;button class=&quot;btn-sm br-lg&quot;&gt;Boton&lt;/button&gt;<br />
+&lt;button class=&quot;btn-info-md br-lg&quot;&gt;Boton&lt;/button&gt;<br />
+&lt;button class=&quot;btn-outlined-info-lg br-lg &quot;&gt;Boton&lt;/button&gt;<br />
+&lt;button class=&quot;btn-complement-link-xl br-lg&quot;&gt;Boton&lt;/button&gt;    
+</code></pre>
+            </div>
+
+
+
+        </div>
+
+        <div class="d-flex justify-space-between ai-center">
+            <h4 id="badges" class="title mt-2"> Badges</h4>
+            <a href="https://github.com/manuelmv15/AstroW/blob/main/AstroW/componentes/_badges.scss" target="_blank"
+                class="link-style-info">Ver código fuente</a>
+        </div>
+
+        <div class="mt-1 mb-1">
+            <hr class="h-rule bg-color-info ">
+        </div>
+
+        <div class="mt-1 mb-1">
+
+
+            <div class="mt-2">
+
+                <ul class="mb-2">
+                    <li class="m-1"><span
+                            class="text-md text-red bg-color-primary-dark-9 br fw-bold">badge-solid-{color}</span>:
+                        Badge con fondo solido y texto</li>
+                    <li class="m-1"><span
+                            class="text-md text-red bg-color-primary-dark-9 br fw-bold">badge-outlined-{color}</span>:
+                        Badge con borde de color y fondo transparente</li>
+                    <li class="m-1"><span
+                            class="text-md text-red bg-color-primary-dark-9 br fw-bold">badge-soft-{color}</span>: Badge
+                        con un fondo claro (tono suave del color)</li>
+                    <li class="m-1"><span
+                            class="text-md text-red bg-color-primary-dark-9 br fw-bold">badge-inverted-{color}</span>:
+                        Badge con fondo claro y texto del color base. Ideal para fondos oscuros</li>
+                </ul>
+
+                <div class="d-flex justify-space-between mb-2">
+                    <label class="badge-outlined-info">Ejemplo</label>
+                </div>
+                <br>
+                <div class="row g-4 justify-center ai-center">
+                    <span class="badge-solid-link-sm lg:col-1">Sizes</span>
+                    <span class="badge-outlined-link-md lg:col-1">Sizes</span>
+                    <span class="badge-soft-link-xl lg:col-1">Sizes</span>
+                    <span class="badge-inverted-link-lg lg:col-1">Sizes</span>
+                    <span class="badge-solid-success lg:col-1">Sizes</span>
+                </div>
+
+                <p class="text-orange-override">Variaciones de tamaños para los badges</p>
+                <div class="mb-2 mt-1">
+                    <hr class="h-rule bg-color-success">
+                </div>
+            </div>
+
+            <div class="m-auto table-responsive">
+                <table class="custom-table">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Sufijo</th>
+                            <th>Ejemplo en HTML</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">Default</span></td>
+                            <td>Sin sufijo</td>
+                            <td><code
+                                    class="language-html">&lt;span class="badge-solid-link"&gt;Sizes&lt;/span&gt;</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">Small</span></td>
+                            <td>-sm</td>
+                            <td><code
+                                    class="language-html">&lt;span class="badge-solid-link-sm"&gt;Sizes&lt;/span&gt;</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">Medium</span></td>
+                            <td>-md</td>
+                            <td><code
+                                    class="language-html">&lt;span class="badge-outlined-link-md"&gt;Sizes&lt;/span&gt;</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">Large</span></td>
+                            <td>-lg</td>
+                            <td><code
+                                    class="language-html">&lt;span class="badge-inverted-link-lg"&gt;Sizes&lt;/span&gt;</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">Extra large</span>
+                            </td>
+                            <td>-xl</td>
+                            <td><code
+                                    class="language-html">&lt;span class="badge-soft-link-xl"&gt;Sizes&lt;/span&gt;</code>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+
+        <!-- //section para las cards -->
+
+        <div>
+
+            <div class="d-flex justify-space-between ai-center mb-1">
+                <h4 class="title">Cards</h4>
+                <a class="link-style-info" target="_blank" href="https://github.com/manuelmv15/AstroW/blob/main/AstroW/componentes/_cards.scss">Ver código fuente</a>
+            </div>
+
+            <hr class="h-rule bg-color-info">
+
+            <!-- card1 -->
+            <div class="mt-2 row justify-center g-2 ai-center">
+
+                <div class="text-area-red-ov">
+                    <div class="card" style="width: 13rem;">
+                        <img src="../icons/highest.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <h6 class="card-subtitle">Card subtitle</h6>
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">An item</li>
+                            <li class="list-group-item">A second item</li>
+                            <li class="list-group-item">A third item</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                
+                <div class="max-w-75">
+                    <div class="">
+                        <pre class="br-lg"><code class="language-html">
+&lt;div class=&quot;card m-auto&quot; style=&quot;width: 18rem;&quot;&gt;
+&lt;img src=&quot;&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+    &lt;div class=&quot;card-body&quot;&gt;
+        &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+        &lt;h6 class=&quot;card-subtitle&quot;&gt;Card subtitle&lt;/h6&gt;
+        &lt;p class=&quot;card-text&quot;&gt;
+            Some quick example text to build on the card title and make up the bulk of the card's content.
+        &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;ul class=&quot;list-group list-group-flush&quot;&gt;
+        &lt;li class=&quot;list-group-item&quot;&gt;An item&lt;/li&gt;
+        &lt;li class=&quot;list-group-item&quot;&gt;A second item&lt;/li&gt;
+        &lt;li class=&quot;list-group-item&quot;&gt;A third item&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;div class=&quot;card-body&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;card-link&quot;&gt;Card link&lt;/a&gt;
+        &lt;a href=&quot;#&quot; class=&quot;card-link&quot;&gt;Another link&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;   
+                        </code></pre>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- card2 -->
+            <div class="mt-2 row justify-center g-2 ai-center">
+
+                <div class="text-area-danger-ov">
+
+                    <div class="card m-auto" style="width: 13rem;">
+                        <img src="../icons/birds.jpg" class="card-img-top" alt="...">
+                        <div class="card-body bg-color-orange-light-8 text-area-red">
+                            <h5 class="card-title">Card title</h5>
+                            <h6 class="card-subtitle">Card subtitle</h6>
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                
+                <div class="max-w-75">
+                    <div class="">
+                        <pre class="br-lg"><code class="language-html">
+&lt;div class=&quot;card m-auto&quot; style=&quot;width: 18rem;&quot;&gt;
+    &lt;img src=&quot;&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+    &lt;div class=&quot;card-body bg-color-orange-light-8 text-area-red&quot;&gt;
+        &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+        &lt;h6 class=&quot;card-subtitle&quot;&gt;Card subtitle&lt;/h6&gt;
+        &lt;p class=&quot;card-text&quot;&gt;
+            Some quick example text to build on the card title and make up the bulk of the card&#39;s content.
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                        </code></pre>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- card3 -->
+            <div class="mt-2 row justify-center g-2 ai-center">
+
+                <div class="text-area-success-ov">
+                    <div class="card m-auto" style="width: 13rem;">
+                        <img src="../icons/jackboys.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <h6 class="card-subtitle">Card subtitle</h6>
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                
+                <div class="max-w-75">
+                    <div class="">
+                        <pre class="br-lg"><code class="language-html">
+&lt;div class=&quot;card m-auto&quot; style=&quot;width: 18rem;&quot;&gt;
+    &lt;img src=&quot;&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+    &lt;div class=&quot;card-body&quot;&gt;
+        &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+        &lt;h6 class=&quot;card-subtitle&quot;&gt;Card subtitle&lt;/h6&gt;
+        &lt;p class=&quot;card-text&quot;&gt;
+            Some quick example text to build on the card title and make up the bulk of the card&#39;s content.
+        &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card-body&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;card-link&quot;&gt;Card link&lt;/a&gt;
+        &lt;a href=&quot;#&quot; class=&quot;card-link&quot;&gt;Another link&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;                          
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="m-auto table-responsive">
+            <table class="custom-table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Sufijo</th>
+                        <th>Ejemplo en HTML</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">Card contenedor</span></td>
+                        <td>Sin sufijo</td>
+                        <td><code class="language-html">&lt;div class="card"&gt;&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">Centrado automático</span></td>
+                        <td>m-auto</td>
+                        <td><code class="language-html">&lt;div class="card m-auto"&gt;&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">Imagen superior</span></td>
+                        <td>card-img-top</td>
+                        <td><code class="language-html">&lt;img class="card-img-top" src="..." /&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">Cuerpo de la card</span></td>
+                        <td>card-body</td>
+                        <td><code class="language-html">&lt;div class="card-body"&gt;...&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">Título</span></td>
+                        <td>card-title</td>
+                        <td><code class="language-html">&lt;h5 class="card-title"&gt;...&lt;/h5&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">Subtítulo</span></td>
+                        <td>card-subtitle</td>
+                        <td><code class="language-html">&lt;h6 class="card-subtitle"&gt;...&lt;/h6&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">Texto de la card</span></td>
+                        <td>card-text</td>
+                        <td><code class="language-html">&lt;p class="card-text"&gt;...&lt;/p&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">Lista interna</span></td>
+                        <td>list-group + list-group-flush</td>
+                        <td><code class="language-html">&lt;ul class="list-group list-group-flush"&gt;...&lt;/ul&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">Ítems de la lista</span></td>
+                        <td>list-group-item</td>
+                        <td><code class="language-html">&lt;li class="list-group-item"&gt;...&lt;/li&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">Enlaces</span></td>
+                        <td>card-link</td>
+                        <td><code class="language-html">&lt;a class="card-link" href="#"&gt;...&lt;/a&gt;</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- fin cards -->
+
+
+
+        <!-- navbars -->
+        
+        <div class="d-flex justify-space-between ai-center mb-1 mt-3">
+            <h4 class="title">Navbar</h4>
+            <a class="link-style-info" target="_blank" href="https://github.com/manuelmv15/AstroW/blob/main/AstroW/componentes/_navbar-alternativo.scss">Ver código fuente</a>
+        </div>
+
+        <hr class="h-rule bg-color-info">
+
+        <div class="container-flow bg-color-pitch-light-3 mt-2 text-area-black-ov br-lg"
+            style="height: 300px; padding-left: 0 !important; padding-right: 0 !important; padding-top: 0 !important;">
+
+            
+            <header class="nav-header" id="site-header" style="position: relative !important; margin-top: 0 !important;">
+                <div class="nav-header-wrapper" style="position: relative !important; margin-top: 0 !important;">
+                    <div class="nav-left">
+
+                        <div>
+                            <a href="" class="nav-items-header">Opcion 1</a>
+                        </div>
+                        <div>
+                            <a href="" class="nav-items-header">
+                                Opcion 2
+                            </a>
+                        </div>
+                       
+                        
+                    </div>
+                    
+                    <div class="nav-right">
+                        
+                        <div class="nav-brand">
+                            <img src="icons/ice.svg" alt="" class="nav-brand-logo">
+                            <span class="nav-brand-name">AstroW</span>
+                        </div>
+            
+                        <div class="nav-menu-container">
+                            <div class="nav-menu" id="menuAlt">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+        
+                <div class="nav-mobile-links" style="margin-top: 0;">
+                    <ul>
+                        <li><a href=""></a>Opcion 1</li>
+                        <li><a href=""></a>Opcion 2</li>
+                    </ul>
+                </div>
+            </header>        
+        </div>
+
+
+        <span class="badge-outlined-info m-1">Ejemplo html</span>
+
+        <div class="m-auto max-w-75 mt-1 mb-3">
+            <pre class="br" style="border: 1px solid snow;"><code class="language-html">
+&lt;header class="nav-header" id="site-header"&gt;
+    &lt;div class="nav-header-wrapper"&gt;
+        &lt;div class="nav-left"&gt;
+            &lt;div&gt;
+                &lt;a href="" class="nav-items-header"&gt;Opcion 1&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+                &lt;a href="" class="nav-items-header"&gt;Opcion 2&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+                    
+        &lt;div class="nav-right"&gt;
+            &lt;div class="nav-brand"&gt;
+                &lt;img src="icons/logo.svg" alt="" class="nav-brand-logo"&gt;
+                &lt;span class="nav-brand-name"&gt;AstroW&lt;/span&gt;
+            &lt;/div&gt;
+
+            &lt;div class="nav-menu-container"&gt;
+                &lt;div class="nav-menu" id="menuAlt"&gt;
+                    &lt;div&gt;&lt;/div&gt;
+                    &lt;div&gt;&lt;/div&gt;
+                    &lt;div&gt;&lt;/div&gt;
+                &lt;/div&gt;    
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="nav-mobile-links"&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;Opcion 1&lt;/li&gt;
+            &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;Opcion 2&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/header&gt;
+            
+            </code></pre>
+        </div>
+
+        <span class="badge-outlined-info m-1">Ejemplo JavaScript</span>
+
+
+        <div class="m-auto max-w-75 mt-1 mb-3">
+            <pre class="br" style="border: 1px solid snow;"><code class="language-javascript">
+&lt;script&gt;
+document.addEventListener('DOMContentLoaded', () =&gt; {
+    const header = document.getElementById('site-header');
+    const menuBtn = document.getElementById('menuAlt');
+                
+    menuBtn.addEventListener('click', () =&gt; {
+
+    menuBtn.classList.toggle('nav-menu-toggle');
+
+    header.classList.toggle('nav-expand');
+    });
+                
+    document.addEventListener("click", (event) =&gt; {
+        const isClickInsideMenu = header.contains(event.target);
+        const isClickOnButton = menuBtn.contains(event.target);
+                
+        if (!isClickInsideMenu &amp;&amp; !isClickOnButton) {
+        header.classList.remove('nav-expand');
+        menuBtn.classList.remove('nav-menu-toggle');
+        }
+    });
+});
+&lt;/script&gt;
+            </code></pre>
+
+
+            <div class="mt-1">
+                <ul class="pl-3 list-orange text-sm">
+                  <li><code class="language-html">.nav-header</code> fija la barra de navegación en la parte superior, con fondo blanco y transiciones suaves en su altura.</li>
+                  <li><code class="language-html">.nav-expand</code> se agrega al hacer clic en el botón del menú; expande el contenedor <code class="language-html">.nav-mobile-links</code> para mostrar los enlaces.</li>
+                  <li><code class="language-html">.nav-mobile-links</code> contiene los enlaces móviles ocultos por defecto; se muestra al activarse <code class="language-html">.nav-expand</code>.</li>
+                  <li><code class="language-html">.nav-header-wrapper</code> estructura principal de la barra: contiene los bloques izquierdo (<code class="language-html">.nav-left</code>) y derecho (<code class="language-html">.nav-right</code>), con diseño horizontal fijo.</li>
+                  <li><code class="language-html">.nav-left</code> y <code class="language-html">.nav-right</code> agrupan los elementos de navegación y marca en extremos opuestos, centrando su contenido verticalmente.</li>
+                  <li><code class="language-html">.nav-brand</code> agrupa el logo y el nombre de la marca, aplicando espaciado y alineación centrada.</li>
+                  <li><code class="language-html">.nav-menu-container</code> muestra el ícono de menú hamburguesa en móviles (<code class="language-html">max-width: 500px</code>) y lo oculta en pantallas grandes.</li>
+                  <li><code class="language-html">.nav-menu</code> define el ícono de hamburguesa con 3 líneas; al añadir <code class="language-html">.nav-menu-toggle</code>, se transforma en una “X”.</li>
+                  <li><code class="language-html">.nav-items-header</code> son los enlaces horizontales visibles en pantallas grandes, ocultos en móviles mediante media query.</li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <!-- navbar alterna -->
+        <div class="d-flex justify-space-between ai-center mb-1 mt-3">
+            <h4 class="title">Navbar estilo alternativo</h4>
+            <a class="link-style-info" target="_blank" href="https://github.com/manuelmv15/AstroW/blob/main/AstroW/componentes/_navbars.scss">Ver código fuente</a>
+        </div>
+
+        <hr class="h-rule bg-color-info">
+
+        <div class="container-flow bg-color-pitch-light-3 mt-2 text-area-black-ov br-lg pos-relative"
+            style="height: 300px; padding-left: 0 !important; padding-right: 0 !important; padding-top: 0 !important;">
+
+            
+            <header>
+                <div class="header-wrapper" style="position: relative !important; z-index: 19 !important;">
+                    <div class="left">
+                        <div>
+                            <a href="#">
+                                <p class=" ">Inicio</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="../icons/star.svg" alt="" class="item-icon">
+                                <p class="item-title">Formularios</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="">
+                                <img src="../icons/star.svg" alt="" class="item-icon">
+                                <p class="item-title">Componentes</p>
+        
+                            </a>
+                        </div>
+                        <div>
+                            <a href="../layout/layout.html">
+                                <img src="../icons/star.svg" alt="" class="item-icon">
+                                <p class="item-title">Layout</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="../utilidades/utilidades.html">
+                                <img src="../icons/star.svg" alt="" class="item-icon">
+                                <p class="item-title">Utilidades</p>
+                            </a>
+                        </div>
+        
+                    </div>
+        
+                    <div class="right">
+        
+                        <div class="brand">
+                            <img src="../icons/logo.svg" alt="" class="brand-logo">
+                            <span class="brand-name theme-font">AstroW</span>
+                        </div>
+        
+                        <div class="menu-container">
+                            <div class="menu" id="menu2">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                </div>
+            </header>
+            
+            <div class="d-flex justify-flex-end">
+
+                <div class="mobile-menu" id="mobileMenu2" style="position: relative !important; top: 0px !important; right: none !important; left: none !important; ">
+                    <div class="mobile-menu-content">
+                        <a href="../index.html">Inicio</a>
+                        <a href="../formularios/formularios.html">Formularios</a>
+                        <a href="componentes.html">Componentes</a>
+                        <a href="../layout/layout.html">Layout</a>
+                        <a href="../utilidades/utilidades.html">Utilidades</a>
+                        <a href="../utilidades/utilidades.html">Utilidades</a>
+                        <a href="../utilidades/utilidades.html">Utilidades</a>
+                        <a href="../utilidades/utilidades.html">Utilidades</a>
+                        <a href="../utilidades/utilidades.html">Utilidades</a>
+                        <a href="../utilidades/utilidades.html">Utilidades</a>
+                        <a href="../utilidades/utilidades.html">Utilidades</a>
+                        <a href="../utilidades/utilidades.html">Utilidades</a>
+                        <a href="../utilidades/utilidades.html">Utilidades</a>
+                        <a href="../utilidades/utilidades.html">Utilidades</a>
+                    </div>
+                </div>
+
+            </div>
+      
+        </div>
+
+        <span class="badge-outlined-info m-1">Ejemplo html</span>
+
+        <div class="m-auto max-w-75 mt-1 mb-3">
+            <pre class="br" style="border: 1px solid snow;"><code class="language-html">
+&lt;header&gt;
+    &lt;div class="header-wrapper"&gt;
+        &lt;div class="left"&gt;
+            &lt;div&gt;
+                &lt;a href="../index.html"&gt;
+                    &lt;p&gt;Inicio&lt;/p&gt;
+                &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+                &lt;a href="../formularios/formularios.html"&gt;
+                    &lt;img src="../icons/star.svg" alt="" class="item-icon"&gt;
+                    &lt;p class="item-title"&gt;Formularios&lt;/p&gt;
+                &lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class="right"&gt;
+            &lt;div class="brand"&gt;
+                &lt;img src="../icons/logo.svg" alt="" class="brand-logo"&gt;
+                &lt;span class="brand-name theme-font"&gt;AstroW&lt;/span&gt;
+            &lt;/div&gt;
+
+            &lt;div class="menu-container"&gt;
+                &lt;div class="menu" id="menu"&gt;
+                    &lt;div&gt;&lt;/div&gt;
+                    &lt;div&gt;&lt;/div&gt;
+                    &lt;div&gt;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/header&gt;
+    
+&lt;!--  modal mobile menu --&gt;
+&lt;div class="mobile-menu" id="mobileMenu"&gt;
+    &lt;div class="mobile-menu-content"&gt;
+        &lt;a href="../index.html"&gt;Inicio&lt;/a&gt;
+        &lt;a href="../formularios/formularios.html"&gt;Formularios&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+            </code></pre>
+        </div>
+
+
+
+        <span class="badge-outlined-info m-1">Ejemplo JavaScript</span>
+
+
+        <div class="m-auto max-w-75 mt-1 mb-3">
+            <pre class="br" style="border: 1px solid snow;"><code class="language-javascript">
+&lt;script&gt;
+document.addEventListener("DOMContentLoaded", function () {
+    const menuBtn = document.getElementById("menu");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuBtn.addEventListener("click", () =&gt; {
+        menuBtn.classList.toggle("menu-toggle");
+        mobileMenu.classList.toggle("show");
+    });
+
+    document.addEventListener("click", (event) =&gt; {
+        if (
+            !mobileMenu.contains(event.target) &amp;&amp;
+            !menuBtn.contains(event.target)
+        ) {
+            menuBtn.classList.remove("menu-toggle");
+            mobileMenu.classList.remove("show");
+        }
+    });
+});
+&lt;/script&gt;
+            </code></pre>
+
+
+            <div class="mt-1">
+                <h1 class="m-1">Estructura principal del navbar</h1>
+                <ul class="pl-3 list-orange text-sm">
+                  <li><code class="language-html">.header-wrapper</code> crea el contenedor principal fijo en la parte superior de la página.</li>
+                  <li><code class="language-html">.left</code> alinea los enlaces principales de navegación al lado izquierdo.</li>
+                  <li><code class="language-html">.right</code> agrupa los elementos del lado derecho como el logo y el botón de menú.</li>
+                </ul>
+            </div>
+    
+            <div class="mt-1">
+                <h1 class="m-1">Estilos de los enlaces</h1>
+                <ul class="pl-3 list-orange text-sm">
+                  <li><code class="language-html">.left a</code> y <code class="language-html">.right a</code> eliminan el subrayado, aplican espaciado interno y añaden efecto hover.</li>
+                  <li><code class="language-html">img</code> dentro del enlace tiene tamaño fijo y bordes redondeados.</li>
+                  <li><code class="language-html">:hover</code> aplica un color de fondo definido para resaltar los enlaces activos.</li>
+                </ul>
+            </div>
+
+
+            <div class="mt-1">
+                <h1 class="m-1">Marca | Branding</h1>
+                <ul class="pl-3 list-orange text-sm">
+                  <li><code class="language-html">.brand</code> agrupa el logo y el nombre del sitio en el lado derecho.</li>
+                  <li><code class="language-html">.brand-logo</code> define el tamaño del ícono o logo de la marca.</li>
+                  <li><code class="language-html">.brand-name</code> aplica una fuente grande y en negrita para destacar el nombre.</li>
+                </ul>
+            </div>
+
+
+            <div class="mt-1">
+                <h1 class="m-1">Boton menu</h1>
+                <ul class="pl-3 list-orange text-sm">
+                  <li><code class="language-html">.menu-container</code> agrupa el botón hamburguesa y lo centra verticalmente.</li>
+                  <li><code class="language-html">.menu</code> crea el ícono de tres líneas horizontales usando tres <code>&lt;div&gt;</code>.</li>
+                  <li><code class="language-html">.menu-toggle</code> transforma el ícono hamburguesa en una "X" cuando el menú está activo.</li>
+                </ul>
+            </div>
+
+
+            <div class="mt-1">
+                <h1 class="m-1">Menu para moviles / Pantallas chicas</h1>
+                <ul class="pl-3 list-orange text-sm">
+                  <li><code class="language-html">.mobile-menu</code> es el contenedor lateral que aparece en pantallas pequeñas.</li>
+                  <li><code class="language-html">.show</code> hace visible el menú móvil con una animación de deslizamiento.</li>
+                  <li><code class="language-html">.mobile-menu-content</code> organiza los enlaces en columna con scroll si hay muchos.</li>
+                  <li><code class="language-html">.mobile-menu-content a</code> aplica estilos táctiles con espaciado, efecto hover e íconos opcionales.</li>
+                </ul>
+            </div>
+             
+        </div>
+
+
+
+
+
+        <!-- fin navbar alterna -->
+
+
+
+        <h1 class="m-1 sub-title">ALERTAS</h1>
+        <div class="m-1">
+            <hr class="h-rule bg-color-success">
+        </div>
+        <!-- //alertas -->
+
+        <div class="row justify-center mt-3">
+
+            <div class="d-flex flex-dir-column ai-center">
+                <div class="p-1 max-w-75">
+                    <pre class="br" style="border: 1px solid snow; overflow-x: scroll;"><code class="language-html w-fit">
+&lt;div class="alert-warning hide col-3"&gt;
+&lt;span class="fas fa-exclamation-circle"&gt;&lt;/span&gt;
+&lt;span class="msg"&gt;Warning: This is a warning alert!&lt;/span&gt;
+&lt;div class="close-btn"&gt;
+    &lt;span class="fas fa-times"&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+                    </code></pre>
+                </div>
+    
+                <div class="p-1">
+                    <button class="btn-warning br-none" id="showAlertWarningButton">Show Warning Alert</button>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div class="row justify-center mt-3">
+
+            <div class="d-flex flex-dir-column ai-center">
+                <div class="p-1 max-w-75">
+                    <pre class="br" style="border: 1px solid snow; overflow-x: scroll;"><code class="language-html w-fit">
+&lt;div class="alert-success hide"&gt;
+    &lt;span class="fas fa-check-circle"&gt;&lt;/span&gt;
+    &lt;span class="msg"&gt;Success: This is a success alert!&lt;/span&gt;
+    &lt;div class="close-btn"&gt;
+        &lt;span class="fas fa-times"&gt;&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                    </code></pre>
+                </div>
+    
+                <div class="p-1">
+                    <button class="btn-success br-none" id="showAlertSuccessButton">Show Success Alert</button>
+                </div>
+            </div>
+
+
+        </div>
+
+    
+
+        <div class="row justify-center mt-3">
+
+            <div class="d-flex flex-dir-column ai-center">
+                <div class="p-1 max-w-75">
+                    <pre class="br" style="border: 1px solid snow; overflow-x: scroll;"><code class="language-html w-fit">
+&lt;div class="alert-danger hide"&gt;
+    &lt;span class="fas fa-exclamation-triangle"&gt;&lt;/span&gt;
+    &lt;span class="msg"&gt;Danger: This is a danger alert!&lt;/span&gt;
+    &lt;div class="close-btn"&gt;
+        &lt;span class="fas fa-times"&gt;&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt; 
+                    </code></pre>
+                </div>
+    
+                <div class="p-1">
+                    <button class="btn-danger br-none" id="showAlertDangerButton">Show Danger Alert</button>
+                </div>
+            </div>
+
+
+        </div>
+        
+        
+
+        <div class="row justify-center mt-3">
+
+            <div class="d-flex flex-dir-column ai-center">
+                <div class="p-1 max-w-75">
+                    <pre class="br" style="border: 1px solid snow; overflow-x: scroll;"><code class="language-html w-fit">
+&lt;div class="alert-info hide"&gt;
+    &lt;span class="fas fa-info-circle"&gt;&lt;/span&gt;
+    &lt;span class="msg"&gt;Info: This is a info alert!&lt;/span&gt;
+    &lt;div class="close-btn"&gt;
+        &lt;span class="fas fa-times"&gt;&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;                    
+                    </code></pre>
+                </div>
+    
+                <div class="p-1">
+                    <button class="btn-info br-none" id="showAlertInfoButton">Show Info Alert</button>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="text-is-centered text-area-red-ov">
+            <h1 class="m-1">Clases para los diferentes estilos de las alertas</h1>
+        </div>
+
+       <div class="max-w-75 m-auto mt-1">
+            <div class="m-auto table-responsive">
+                <table class="custom-table">
+                    <thead>
+                        <tr>
+                            <th>Clase</th>
+                            <th>Descripción</th>
+                            <th>Clase icono</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code class="language-html">.alert-warning</code></td>
+                            <td>Advertencia, precaución <i class="fas fa-exclamation-circle"></i></td>
+                            <td><code class="language-html">.fas fa-exclamation-circle</code></td>
+                        </tr>
+                        <tr>
+                            <td><code class="language-html">.alert-success</code></td>
+                            <td>Acción completada correctamente <i class="fas fa-check-circle"></i></td>
+                            <td><code class="language-html">.fas fa-check-circle</code></td>
+                        </tr>
+                        <tr>
+                            <td><code class="language-html">.alert-danger</code></td>
+                            <td>Error o acción peligrosa <i class="fas fa-exclamation-triangle"></i></td>
+                            <td><code class="language-html">.fas fa-exclamation-triangle</code></td>
+                        </tr>
+                        <tr>
+                            <td><code class="language-html">.alert-info</code></td>
+                            <td>Información general o notificaciones <i class="fas fa-info-circle"></i></td>
+                            <td><code class="language-html">.fas fa-info-circle</code></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+       </div>
+
+       
+        <div class="p-1 max-w-75 m-c">
+            <div class="m-c w-fit">
+                <span class="badge-soft-red p-1">Ejemplo JavaScript para una alerta</span>
+            </div>
+            <pre class="br" style="border: 1px solid snow; overflow-x: scroll;"><code class="language-html w-fit">
+&lt;script&gt;
+const showAlertWarningButton = document.getElementById('showAlertWarningButton');
+const closeBtn = document.querySelector('.close-btn');
+
+closeBtn.addEventListener('click', function(){
+    alertaWarning.classList.remove('show');
+    alertaWarning.classList.add('hide');
+});
+
+showAlertWarningButton.addEventListener('click', function(){
+    alertaWarning.classList.add('show');
+    alertaWarning.classList.remove('hide');
+    alertaWarning.classList.add('showAlert');
+
+    setTimeout(function() {
+        alertaWarning.classList.remove('show');
+        alertaWarning.classList.add('hide');
+    }, 3000);
+});
+&lt;/script&gt;                
+            </code></pre>
+        </div>
+
+        <div class="alert-warning hide col-3">
+            <span class="fas fa-exclamation-circle"></span>
+            <span class="msg">Warning: This is a warning alert!</span>
+            <div class="close-btn">
+               <span class="fas fa-times"></span>
+            </div>
+        </div>
+
+        <div class="alert-success hide">
+            <span class="fas fa-check-circle"></span>
+            <span class="msg">Success: This is a success alert!</span>
+            <div class="close-btn">
+               <span class="fas fa-times"></span>
+            </div>
+        </div>
+
+        <div class="alert-danger hide">
+            <span class="fas fa-exclamation-triangle"></span>
+            <span class="msg">Danger: This is a danger alert!</span>
+            <div class="close-btn">
+               <span class="fas fa-times"></span>
+            </div>
+        </div>
+
+        <div class="alert-info hide">
+            <span class="fas fa-info-circle"></span>
+            <span class="msg">Info: This is a info alert!</span>
+            <div class="close-btn">
+               <span class="fas fa-times"></span>
+            </div>
+        </div> 
+        
+        
+        
+
+
+        
+        
+        
+
+        
+
+
+
+
+
+    </main>
+
+
+
+
+
+    <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-html.min.js"></script>
+
+</body>
+
+</html>
